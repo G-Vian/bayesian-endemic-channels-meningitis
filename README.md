@@ -1,13 +1,13 @@
-# Bayesian Endemic Channels for Meningitis Surveillance — State of São Paulo, Brazil
+# Bayesian Epidemic Bands for Meningitis Surveillance — State of São Paulo, Brazil
 
-R code for building **historical bands (endemic channels)** for meningitis
+R code for building **probabilistic epidemic bands** for meningitis
 surveillance using Bayesian structural time-series models fitted with
 [R-INLA](https://www.r-inla.org/), and for estimating the **counterfactual effect
 of vaccination coverage** on the expected disease burden.
 
 Developed at the Centro de Vigilância Epidemiológica (CVE) of the São Paulo State
 Health Department, using notification data from **SINAN** (Sistema de Informação
-de Agravos de Notificação, the Brazilian national notifiable disease system).
+de Agravos de Notificação, the Brazilian National Notifiable Disease System).
 
 ---
 
@@ -50,7 +50,7 @@ side by side.
 
 ## The model
 
-Weekly case counts are modelled as Poisson. The linear predictor contains an
+Weekly case counts are modelled as Poisson process. The linear predictor contains an
 intercept, a **seasonal term** across the 52 epidemiological weeks (a first-order
 random walk by default, or Fourier harmonics), and an **i.i.d. year effect**:
 
@@ -67,7 +67,7 @@ within that draw:
 C[t, m] = sum over i = 1..t of Y[i, m]
 ```
 
-This yields a full predictive matrix of **52 weeks × N samples**. The four zones
+This yields a full predictive matrix of **52 weeks × N samples**. The four epidemic band zones
 are quantiles of that matrix (2.5% / 50% / 97.5% by default), matching the
 interval level of the classic endemic channel.
 
