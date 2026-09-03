@@ -83,7 +83,7 @@
 #
 #  HOW TO RUN
 #  ---------------------------------------------------------------------------
-#  1. Replace every "insira aqui seu diretório" placeholder with a real path.
+#  1. Replace every "INSERT HERE YOUR DIRECTORY"  placeholder with a real path.
 #  2. Set config$vaccine$band_years to your target years, remembering the lag:
 #     predicting year X requires coverage measured in year X - lag.
 #  3. Source the whole file. Missing packages install automatically.
@@ -101,10 +101,10 @@
 #  1. CONFIGURATION — EDIT HERE
 # =============================================================================
 config <- list(
-  data_path = "insira aqui seu diretório",
+  data_path = "INSERT HERE YOUR DIRECTORY" ,
   
   # Output folder exclusively for Vaccine Results
-  output_folder = "insira aqui seu diretório",
+  output_folder = "INSERT HERE YOUR DIRECTORY" ,
   
   # Training years (excluding pandemic 2020/2021). Evaluates targets in 2019/2022.
   train_years = c(2013, 2014, 2015, 2016, 2017, 2018, 2019, 2022),
@@ -135,18 +135,18 @@ config <- list(
   ),
   
   # Shapefiles for regional mappings
-  shapefile_municipalities = "insira aqui seu diretório",
+  shapefile_municipalities = "INSERT HERE YOUR DIRECTORY" ,
   col_id_municipalities    = NULL,   # NULL = auto-detects name column
-  shapefile_cir            = "insira aqui seu diretório",
+  shapefile_cir            = "INSERT HERE YOUR DIRECTORY" ,
   col_id_cir               = NULL,   # NULL = auto-detects identifier
-  shapefile_drs            = "insira aqui seu diretório",
+  shapefile_drs            = "INSERT HERE YOUR DIRECTORY" ,
   col_id_drs               = "X17DRS",
   
   width = 1200, height = 600, dpi = 150,
   
   # ---- VACCINE CONFIGURATION ----------------------------------------------
   vaccine = list(
-    folder = "insira aqui seu diretório",
+    folder = "INSERT HERE YOUR DIRECTORY" ,
     files = list(
       penta     = "penta_2012_2022.csv",
       tetra     = "tetra_2002_2016.csv",
