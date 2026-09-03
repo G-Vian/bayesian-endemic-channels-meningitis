@@ -73,7 +73,7 @@
 #
 #  HOW TO RUN
 #  ---------------------------------------------------------------------------
-#  1. Replace every "insira aqui seu diretório" placeholder below with a real
+#  1. Replace every "INSERT HERE YOUR DIRECTORY" placeholder below with a real
 #     path on your machine.
 #  2. Set config$anos_treino (training years) and config$ano_atual (the year whose
 #     observed trajectory is drawn on top of the band).
@@ -96,8 +96,8 @@
 config <- list(
   
   # Meningitis line-list database (SINAN / CVE-SP):
-  caminho_dados = "insira aqui seu diretório",
-  pasta_saida   = "insira aqui seu diretório",
+  caminho_dados = "INSERT HERE YOUR DIRECTORY",
+  pasta_saida   = "INSERT HERE YOUR DIRECTORY",
   
   # Training: 2013 to 2024, EXCLUDING 2020-2022 (your epidemiological decision).
   anos_treino = c(2013, 2014, 2015, 2016, 2017, 2018, 2023, 2024, 2025),
@@ -223,8 +223,8 @@ config <- list(
     ativar    = TRUE,                 # <<< SWITCH turns on/off
     ano       = 2025,                  # consolidated year to overlay
     # Partial bases (line-list, SAME format as the database). Label -> .RDS path.
-    # The order defines the line order (increasing EW).
-    pasta_parciais = "insira aqui seu diretório",
+    # The order defines the line order (increasing EW). (These partial bases are not available in this repository)
+    pasta_parciais = "INSERT HERE YOUR DIRECTORY",
     parciais = list(
       "EW 13" = "base_parcial_SE13_2025.RDS",
       "EW 26" = "base_parcial_SE26_2025.RDS",
@@ -264,18 +264,18 @@ config <- list(
     familia = NULL, sazonal = NULL, n_harmonicos = NULL, formula = NULL,  # NULL = inherits from level
     # YOUR SHAPEFILES:
     usar_geobr = FALSE, ano_geobr = 2020,
-    shapefile_municipios = "insira aqui seu diretório",
+    shapefile_municipios = "INSERT HERE YOUR DIRECTORY",
     coluna_id_municipios = NULL,
-    shapefile_drs = "insira aqui seu diretório",
+    shapefile_drs = "INSERT HERE YOUR DIRECTORY",
     coluna_id_drs = "X17DRS",
-    shapefile_cir = "insira aqui seu diretório",
+    shapefile_cir = "INSERT HERE YOUR DIRECTORY",
     coluna_id_cir = NULL
   ),
   grafos        = list(Estado = NULL, DRS = NULL, CIR = NULL, Municipio = NULL),
   regioes_grafo = list(Estado = NULL, DRS = NULL, CIR = NULL, Municipio = NULL),
   
   cir = list(
-    shapefile = "insira aqui seu diretório",
+    shapefile = "INSERT HERE YOUR DIRECTORY",
     coluna_id = NULL, lookup = NULL
   ),
   
